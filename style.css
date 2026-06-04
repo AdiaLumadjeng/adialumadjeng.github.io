@@ -292,3 +292,59 @@ footer .container {
 }
 .page-header h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
 .page-header p { font-size: 0.95rem; color: #555; }
+
+/* ── Mobile responsive ── */
+@media (max-width: 640px) {
+
+  /* Nav: stack name above links, smaller gap */
+  nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+  }
+  nav ul a { font-size: 0.82rem; }
+
+  /* Hero: stack photo above text */
+  .hero { padding: 1.5rem 1.25rem; margin: 1rem 0; }
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .hero-photo { width: 120px; height: 120px; }
+  .hero .name { font-size: 1.6rem; }
+  .hero .bio-short { font-size: 0.9rem; }
+
+  /* Sections */
+  section { padding: 2rem 0; }
+
+  /* Paper thumbnails: hide on very small screens */
+  .paper-thumb { display: none; }
+  .paper-inner { flex-direction: column; }
+
+  /* CV grid: collapse year/content columns */
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .cv-year { font-size: 0.78rem; }
+
+  /* Projects grid: single column */
+  .projects-grid { grid-template-columns: 1fr; }
+  .activities-grid { grid-template-columns: 1fr; }
+
+  /* Links buttons: wrap nicely */
+  .links { gap: 0.5rem; }
+  .links a { font-size: 0.78rem; padding: 0.25rem 0.6rem; }
+
+  /* Page header */
+  .page-header { padding: 1.5rem 0 1rem; }
+  .page-header h1 { font-size: 1.4rem; }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1rem; }
+}
