@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Adia Lumadjeng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="site-name">Adia Lumadjeng</a>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="index.html#activities">Activities</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Research</h1>
+        <p>Publications and ongoing work in interpretable machine learning.</p>
+      </div>
+
+      <!-- ── Publications ── -->
+      <section>
+        <h2>Publications</h2>
+
+        <!-- Paper 1: ECSEL -->
+        <div class="paper">
+          <p class="paper-title">
+            ECSEL: Explainable Classification via Signomial Equation Learning
+          </p>
+          <p class="paper-authors">
+            Adia C. Lumadjeng, Ilker Birbil, Erman Acar
+          </p>
+          <p class="paper-venue">
+            International Conference on Machine Learning (ICML), 2026 · Seoul
+            &nbsp;·&nbsp; also presented at WiML Symposium, ICML 2026
+          </p>
+          <details class="paper-abstract">
+            <summary>Abstract</summary>
+            <p>
+              <!-- TODO: paste final abstract here -->
+              ECSEL introduces signomial functions as a class of interpretable classifiers.
+              Signomials — sums of monomials with real exponents — are expressive enough to
+              approximate a wide range of decision boundaries while remaining symbolically
+              readable. We develop a three-stage training procedure and an interpretability
+              framework grounded in elasticity analysis, enabling practitioners to inspect
+              feature contributions directly from the learned equation.
+            </p>
+          </details>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2601.21789" target="_blank">arXiv</a>
+            <a href="https://github.com/AdiaLumadjeng/ecsel" target="_blank">Code</a>
+            <a href="#" target="_blank">PMLR (coming soon)</a>
+          </div>
+        </div>
+
+        <!-- Paper 2: Röber et al. -->
+        <div class="paper">
+          <p class="paper-title">
+            Rule generation for classification: Scalability, interpretability, and fairness
+          </p>
+          <p class="paper-authors">
+            Tabea E. Röber, Adia C. Lumadjeng, M. Hakan Akyüz, Ş. İlker Birbil
+          </p>
+          <p class="paper-venue">
+            Computers &amp; Operations Research, Volume 183, 2025, 107163
+            &nbsp;·&nbsp;
+            <a href="https://doi.org/10.1016/j.cor.2025.107163" target="_blank">
+              doi:10.1016/j.cor.2025.107163
+            </a>
+          </p>
+          <details class="paper-abstract">
+            <summary>Abstract</summary>
+            <p>
+              We introduce a new rule-based optimization method for classification with constraints.
+              The proposed method leverages column generation for linear programming, and hence, is
+              scalable to large datasets. The resulting pricing subproblem is shown to be NP-Hard.
+              We recourse to a decision tree-based heuristic and solve a proxy pricing subproblem
+              for acceleration. The method returns a set of rules along with their optimal weights
+              indicating the importance of each rule for learning. We address interpretability and
+              fairness by assigning cost coefficients to the rules and introducing additional
+              constraints. In particular, we focus on local interpretability and generalize a
+              separation criterion in fairness to multiple sensitive attributes and classes.
+              We test the performance of the proposed methodology on a collection of datasets and
+              present a case study to elaborate on its different aspects. The proposed rule-based
+              learning method exhibits a good compromise between local interpretability and fairness
+              on the one side, and accuracy on the other side.
+            </p>
+          </details>
+          <p style="font-size:0.82rem; color:#777; margin: 0.4rem 0 0.75rem;">
+            Keywords: Machine learning · Linear programming · Rule generation · Interpretability · Fairness
+          </p>
+          <div class="paper-links">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0305054825001911" target="_blank">ScienceDirect</a>
+            <a href="https://doi.org/10.1016/j.cor.2025.107163" target="_blank">DOI</a>
+            <a href="https://github.com/sibirbil/RuleDiscovery" target="_blank">Code (RUX/RUG)</a>
+            <a href="https://github.com/sametcopur/ruleopt" target="_blank">ruleopt package</a>
+          </div>
+        </div>
+
+      </section>
+
+    </div><!-- /.container -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© Adia Lumadjeng</span>
+      <span>University of Amsterdam</span>
+    </div>
+  </footer>
+
+</body>
+</html>
