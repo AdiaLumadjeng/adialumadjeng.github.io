@@ -9,9 +9,9 @@
   --teal: #156e62;
   --teal-light: #e8f2f1;
   --teal-mid: #1e9080;
-  --box-bg: #f0f3f2;
-  --nav-bg: #f0f3f2;
-  --box-border: #d0deda;
+  --box-bg: #f0f1f1;
+  --nav-bg: #f0f1f1;
+  --box-border: #d8dcdb;
 }
 
 /* ── Base ── */
@@ -39,6 +39,7 @@ nav {
   top: 0;
   background: var(--nav-bg);
   z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 nav .container {
   display: flex;
@@ -84,6 +85,7 @@ p:last-child { margin-bottom: 0; }
   border: 1px solid var(--box-border);
   border-radius: 12px;
   margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 .hero-inner {
   display: flex;
