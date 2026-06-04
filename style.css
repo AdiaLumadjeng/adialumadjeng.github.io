@@ -167,8 +167,8 @@ p:last-child { margin-bottom: 0; }
 .paper:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .paper-inner { display: flex; gap: 1.25rem; align-items: flex-start; }
 .paper-thumb {
-  width: 60px;
-  height: 78px;
+  width: 150px;
+  height: 90x;
   object-fit: cover;
   border: 1px solid #ddd;
   border-radius: 3px;
