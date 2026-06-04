@@ -9,9 +9,9 @@
   --magenta: #B5006E;
   --magenta-light: #fce8f3;
   --magenta-mid: #cc3d90;
-  --hero-bg: #fdf4f9;
+  --hero-bg: #f7f5f2;
   --nav-bg: #faf0f5;
-  --ivory: #faf0f5;
+  --box-border: #e4e0da;
 }
 
 /* ── Base ── */
@@ -34,7 +34,7 @@ body {
 /* ── Navigation ── */
 nav {
   border-bottom: 1px solid #e8d5e0;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
   position: sticky;
   top: 0;
   background: var(--nav-bg);
@@ -81,6 +81,7 @@ p:last-child { margin-bottom: 0; }
 .hero {
   padding: 3rem 2rem;
   background: var(--hero-bg);
+  border: 1px solid var(--box-border);
   border-radius: 12px;
   margin: 2rem 0;
 }
@@ -164,7 +165,7 @@ p:last-child { margin-bottom: 0; }
 }
 .project-card {
   background: var(--hero-bg);
-  border: 1px solid #e8d5e0;
+  border: 1px solid var(--box-border);
   padding: 1rem;
   border-radius: 10px;
 }
