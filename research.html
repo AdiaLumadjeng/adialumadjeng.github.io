@@ -4,9 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — Adia Lumadjeng</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .bib-block {
+      display: none;
+      margin-top: 0.75rem;
+      background: #f6f8f8;
+      border: 1px solid var(--box-border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      line-height: 1.6;
+      color: #333;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    .bib-block.open { display: block; }
+    .bib-key { color: var(--teal); font-weight: bold; }
+    .bib-field { color: #888; }
+    .bib-value { color: #c0392b; }
+  </style>
 </head>
 <body>
 
@@ -67,8 +87,16 @@
               <div class="paper-links">
                 <a href="https://arxiv.org/abs/2601.21789" target="_blank">Paper</a>
                 <a href="https://github.com/AdiaLumadjeng/ecsel" target="_blank">Code</a>
-                <a href="ecsel.bib" target="_blank">BIB</a>
+                <a href="#" onclick="toggleBib('bib-ecsel'); return false;">BIB</a>
               </div>
+              <div class="bib-block" id="bib-ecsel"><span class="bib-key">@inproceedings{lumadjeng2026ecsel,</span>
+  <span class="bib-field">  title</span>     = <span class="bib-value">{ECSEL: Explainable Classification via Signomial Equation Learning}</span>,
+  <span class="bib-field">  author</span>    = <span class="bib-value">{Lumadjeng, Adia C. and Birbil, {\c{S}}. {\.I}lker and Acar, Erman}</span>,
+  <span class="bib-field">  booktitle</span> = <span class="bib-value">{Proceedings of the 43rd International Conference on Machine Learning}</span>,
+  <span class="bib-field">  series</span>    = <span class="bib-value">{Proceedings of Machine Learning Research}</span>,
+  <span class="bib-field">  year</span>      = <span class="bib-value">{2026}</span>,
+  <span class="bib-field">  url</span>       = <span class="bib-value">{https://arxiv.org/abs/2601.21789}</span>,
+<span class="bib-key">}</span></div>
             </div>
           </div>
         </div>
@@ -109,8 +137,18 @@
               <div class="paper-links">
                 <a href="https://www.sciencedirect.com/science/article/pii/S0305054825001911" target="_blank">Paper</a>
                 <a href="https://github.com/sibirbil/RuleDiscovery" target="_blank">Code</a>
-                <a href="rug.bib" target="_blank">BIB</a>
+                <a href="#" onclick="toggleBib('bib-rug'); return false;">BIB</a>
               </div>
+              <div class="bib-block" id="bib-rug"><span class="bib-key">@article{rober2025rule,</span>
+  <span class="bib-field">  title</span>   = <span class="bib-value">{Rule generation for classification: Scalability, interpretability, and fairness}</span>,
+  <span class="bib-field">  author</span>  = <span class="bib-value">{R{\"o}ber, Tabea E. and Lumadjeng, Adia C. and Aky{\"u}z, M. Hakan and Birbil, {\c{S}}. {\.I}lker}</span>,
+  <span class="bib-field">  journal</span> = <span class="bib-value">{Computers \&amp; Operations Research}</span>,
+  <span class="bib-field">  volume</span>  = <span class="bib-value">{183}</span>,
+  <span class="bib-field">  pages</span>   = <span class="bib-value">{107163}</span>,
+  <span class="bib-field">  year</span>    = <span class="bib-value">{2025}</span>,
+  <span class="bib-field">  doi</span>     = <span class="bib-value">{10.1016/j.cor.2025.107163}</span>,
+  <span class="bib-field">  issn</span>    = <span class="bib-value">{0305-0548}</span>,
+<span class="bib-key">}</span></div>
             </div>
           </div>
         </div>
@@ -126,6 +164,13 @@
       <span>University of Amsterdam</span>
     </div>
   </footer>
+
+  <script>
+    function toggleBib(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('open');
+    }
+  </script>
 
 </body>
 </html>
