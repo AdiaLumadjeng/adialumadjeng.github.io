@@ -187,9 +187,10 @@ p:last-child { margin-bottom: 0; }
   border: 1px solid #bbb;
   border-radius: 3px;
   padding: 0.1rem 0.45rem;
-  margin-left: 0.5rem;
-  vertical-align: middle;
+  margin-left: 0.4rem;
+  vertical-align: text-bottom;
   color: #666;
+  white-space: nowrap;
 }
 .paper-authors { font-size: 0.9rem; color: #555; margin-bottom: 0.15rem; }
 .paper-venue { font-size: 0.85rem; color: #777; margin-bottom: 0.5rem; }
