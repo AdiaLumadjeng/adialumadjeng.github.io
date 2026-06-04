@@ -142,20 +142,20 @@ p:last-child { margin-bottom: 0; }
 .activity-card p { font-size: 0.9rem; color: #444; margin-bottom: 0.6rem; }
 .activity-card a { font-size: 0.85rem; color: inherit; }
 
-/* ── Personal projects ── */
+/* ── Personal projects (smaller/quieter than activities) ── */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 .project-card {
-  border: 1px solid #ddd;
-  padding: 1.25rem;
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
   border-radius: 4px;
 }
-.project-card h3 { margin-bottom: 0.4rem; }
-.project-card p { font-size: 0.9rem; color: #444; margin-bottom: 0.6rem; }
-.project-card a { font-size: 0.85rem; color: inherit; }
+.project-card h3 { font-size: 0.9rem; margin-bottom: 0.35rem; }
+.project-card p { font-size: 0.82rem; color: #555; margin-bottom: 0.5rem; }
+.project-card a { font-size: 0.8rem; color: inherit; }
 
 /* ── Papers (research page) ── */
 .paper {
