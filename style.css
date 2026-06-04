@@ -169,17 +169,17 @@ p:last-child { margin-bottom: 0; }
 .paper:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .paper-inner { display: flex; gap: 1.25rem; align-items: flex-start; }
 .paper-thumb {
-  width: 120px;
-  height: 160px;
+  width: 108px;
+  height: 80px;
   object-fit: contain;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 3px;
   flex-shrink: 0;
-  padding: 6px;
+  padding: 4px;
 }
 .paper-content { flex: 1; }
-.paper-title { font-size: 1rem; font-weight: bold; margin-bottom: 0.2rem; display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.4rem; }
+.paper-title { font-size: 1rem; font-weight: bold; margin-bottom: 0.2rem; }
 .paper-badge {
   display: inline-block;
   font-size: 0.72rem;
