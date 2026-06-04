@@ -2,9 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adia Lumadjeng</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="site-name">Adia Lumadjeng</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- ── Hero ── -->
+      <section class="hero" id="hero">
+        <p class="name">Adia Lumadjeng</p>
+        <p class="title">PhD Researcher · University of Amsterdam</p>
+        <p class="bio-short">
+          I work on interpretable machine learning, with a focus on symbolic regression-based classifiers.
+          My research aims to make predictive models that are genuinely readable — not just accurate.
+          I am supervised by <a href="https://birbil.github.io/">Ilker Birbil</a> and Erman Acar at the
+          Amsterdam Institute for Interaction and Cognition (AIBC).
+        </p>
+        <div class="links">
+          <a href="mailto:[YOUR EMAIL HERE]">Email</a>
+          <a href="https://github.com/AdiaLumadjeng" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/[YOUR LINKEDIN]" target="_blank">LinkedIn</a>
+          <a href="cv.html">CV</a>
+          <a href="https://arxiv.org/abs/2601.21789" target="_blank">arXiv</a>
+        </div>
+      </section>
+
+      <!-- ── About ── -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a PhD researcher at the University of Amsterdam working on explainable AI and symbolic
+          learning. My main project, ECSEL (Explainable Classification via Signomial Equation Learning),
+          introduces signomial functions as an interpretable classifier class with provable expressivity.
+          The paper was accepted at ICML 2026.
+        </p>
+        <p>
+          Alongside the core ECSEL work, I am developing follow-up research on sparse signomial classifiers
+          and analytical rule extraction, targeting venues at the intersection of machine learning and
+          operations research. I also have interests in algorithmic fairness and causal inference.
+        </p>
+        <p>Supervisors: <strong>Ilker Birbil</strong> and <strong>Erman Acar</strong>.</p>
+        <div class="tags">
+          <span class="tag">Interpretable ML</span>
+          <span class="tag">Symbolic regression</span>
+          <span class="tag">Signomial functions</span>
+          <span class="tag">Algorithmic fairness</span>
+          <span class="tag">Causal inference</span>
+          <span class="tag">Operations research</span>
+        </div>
+      </section>
+
+      <!-- ── News ── -->
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">Jul 2026</span>
+            <span class="news-text">
+              Presenting ECSEL at the <strong>WiML Symposium</strong> at ICML 2026, Seoul.
+            </span>
+          </li>
+          <li>
+            <span class="news-date">Jul 2026</span>
+            <span class="news-text">
+              Attending <strong>ICML 2026</strong> (Seoul, COEX) for the ECSEL paper.
+            </span>
+          </li>
+          <li>
+            <span class="news-date">Jun 2026</span>
+            <span class="news-text">
+              Attending <strong>MLSS NYC 2026</strong> at Columbia University — a two-week summer school
+              covering LLM alignment, interpretability, reasoning, and more.
+            </span>
+          </li>
+          <li>
+            <span class="news-date">2026</span>
+            <span class="news-text">
+              Paper accepted at <strong>ICML 2026</strong>:
+              <em>ECSEL: Explainable Classification via Signomial Equation Learning</em>.
+              <a href="https://arxiv.org/abs/2601.21789" target="_blank">[arXiv]</a>
+              <a href="https://github.com/AdiaLumadjeng/ecsel" target="_blank">[code]</a>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ── Activities ── -->
+      <section id="activities">
+        <h2>Activities</h2>
+        <div class="activities-grid">
+          <div class="activity-card">
+            <h3>WiML Symposium</h3>
+            <p>
+              Presenting at the Women in Machine Learning Symposium at ICML 2026 in Seoul,
+              co-located with the main conference.
+            </p>
+          </div>
+          <div class="activity-card">
+            <h3>PhD wellbeing</h3>
+            <p>
+              Organising wellbeing check-in activities for PhD students at the University of Amsterdam.
+            </p>
+          </div>
+          <div class="activity-card">
+            <h3>Bachelor thesis supervision</h3>
+            <p>
+              Supervising bachelor students, including a group building an NL-to-SQL chat assistant
+              for UNL staff.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Personal projects ── -->
+      <section id="projects">
+        <h2>Personal projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Kleilokaal</h3>
+            <p>
+              Social media manager for Kleilokaal, a ceramics studio. I run their Instagram presence,
+              covering studio life, workshops, and the work of resident makers.
+            </p>
+            <a href="https://www.instagram.com/kleilokaal/" target="_blank">@kleilokaal on Instagram ↗</a>
+          </div>
+          <div class="project-card">
+            <h3>Atomic Knitten</h3>
+            <p>
+              My personal knitting practice and portfolio. I design and make knitwear, and also sell
+              pieces — the Instagram serves as my shop window.
+            </p>
+            <a href="https://www.instagram.com/atomicknitten/" target="_blank">@atomicknitten on Instagram ↗</a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /.container -->
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <span>© Adia Lumadjeng</span>
+      <span>University of Amsterdam</span>
+    </div>
+  </footer>
+
 </body>
 </html>
