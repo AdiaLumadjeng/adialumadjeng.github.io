@@ -217,7 +217,11 @@ p:last-child { margin-bottom: 0; }
 }
 .paper-links a:hover { background: #f5f5f5; }
 
-/* ── CV entries ── */
+/* ── Subpage section spacing (CV, Teaching, Research) ── */
+.cv-page section,
+.subpage section {
+  padding: 1.75rem 0;
+}
 .cv-section { margin-bottom: 2.5rem; }
 .cv-entry {
   display: grid;
