@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — Adia Lumadjeng</title>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     .bib-block {
       display: none;
@@ -22,12 +24,33 @@
       white-space: pre;
       overflow-x: auto;
     }
-    .bib-block.open { display: block; }
-    .bib-key { color: var(--teal); font-weight: bold; }
-    .bib-field { color: #888; }
-    .bib-value { color: #c0392b; }
+
+    .bib-block.open {
+      display: block;
+    }
+
+    .bib-key {
+      color: var(--teal);
+      font-weight: bold;
+    }
+
+    .bib-field {
+      color: #888;
+    }
+
+    .bib-value {
+      color: #c0392b;
+    }
+
+    .research-subheading {
+      margin-top: 1.75rem;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -54,17 +77,106 @@
       <section>
         <h2>Publications</h2>
 
+        <!-- =========================
+             PREPRINTS
+        ========================== -->
+        <h3 class="research-subheading">Preprints</h3>
+
+        <!-- Readable Rules -->
+        <div class="paper">
+          <div class="paper-inner">
+            <img
+              src="thumbnail_ReadableRules.png"
+              alt="Readable rules paper thumbnail"
+              class="paper-thumb"
+            >
+
+            <div class="paper-content">
+              <p class="paper-title">
+                How Simple Can It Get? From Interpretable Equations to Readable Rules for Financial Decision Making
+                <span class="paper-badge">Preprint</span>
+              </p>
+
+              <p class="paper-authors">
+                Adia C. Lumadjeng, Ş. İlker Birbil, Erman Acar
+              </p>
+
+              <p class="paper-venue">
+                arXiv preprint, 2026
+              </p>
+
+              <details class="paper-abstract">
+                <summary>Abstract</summary>
+                <p>
+                  In regulated domains such as finance, a model that cannot be explained cannot be deployed,
+                  yet many interpretable classifiers defeat their own purpose by producing formulas with dozens
+                  of features that no regulator could read. We take the reverse direction. Starting from an
+                  interpretable classifier expressed as a single equation over the input features, we progressively
+                  simplify it into more readable forms, including a pruned monomial, a directional if--then rule,
+                  and the integer scorecards and tallies that finance already deploys. Because the equation is
+                  itself the predictive model rather than a post-hoc explanation, we can directly quantify what
+                  is lost under each simplification. Across four financial datasets, we find that pruning is nearly
+                  free and that fidelity can erode faster than predictive performance, allowing simpler rules to
+                  remain effective classifiers without faithfully reproducing the original model. A human assessment
+                  shows that simplification improves perceived readability, while preferences for different
+                  representations vary by professional background. Beyond measuring these losses empirically,
+                  we show that some can be anticipated from the original model: we derive a bound on the change
+                  caused by pruning, and predict how faithfully a rule that retains only the direction of each
+                  feature's effect preserves the original ranking.
+                </p>
+              </details>
+
+              <p class="paper-keywords">
+                <strong>Keywords:</strong>
+                Interpretability · Equation Learning · Readable Rules · Financial Decision Making · Fidelity
+              </p>
+
+              <div class="paper-links">
+                <!-- Replace with final arXiv URL once available -->
+                <a href="YOUR_ARXIV_URL" target="_blank">Paper</a>
+                <a href="#" onclick="toggleBib('bib-readable-rules'); return false;">BIB</a>
+              </div>
+
+              <div class="bib-block" id="bib-readable-rules"><span class="bib-key">@article{lumadjeng2026readablerules,</span>
+<span class="bib-field">  title</span>   = <span class="bib-value">{How Simple Can It Get? From Interpretable Equations to Readable Rules for Financial Decision Making}</span>,
+<span class="bib-field">  author</span>  = <span class="bib-value">{Lumadjeng, Adia C. and Birbil, {\c{S}}. {\.I}lker and Acar, Erman}</span>,
+<span class="bib-field">  journal</span> = <span class="bib-value">{arXiv preprint}</span>,
+<span class="bib-field">  year</span>    = <span class="bib-value">{2026}</span>,
+<span class="bib-field">  url</span>     = <span class="bib-value">{YOUR_ARXIV_URL}</span>,
+<span class="bib-key">}</span></div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- =========================
+             PUBLISHED WORK
+        ========================== -->
+        <h3 class="research-subheading">Published Work</h3>
+
         <!-- ECSEL -->
         <div class="paper">
           <div class="paper-inner">
-            <img src="thumbnail_ecsel.jpg" alt="ECSEL paper thumbnail" class="paper-thumb">
+            <img
+              src="thumbnail_ecsel.jpg"
+              alt="ECSEL paper thumbnail"
+              class="paper-thumb"
+            >
+
             <div class="paper-content">
-              <p class="paper-title">ECSEL: Explainable Classification via Signomial Equation Learning <span class="paper-badge">To appear</span></p>
-              <p class="paper-authors">Adia C. Lumadjeng, Ş. İlker Birbil, Erman Acar</p>
-              <p class="paper-venue">
-                International Conference on Machine Learning (ICML), 2026 · Seoul
-                &nbsp;·&nbsp; will also present at WiML Symposium, ICML 2026
+              <p class="paper-title">
+                ECSEL: Explainable Classification via Signomial Equation Learning
               </p>
+
+              <p class="paper-authors">
+                Adia C. Lumadjeng, Ş. İlker Birbil, Erman Acar
+              </p>
+
+              <p class="paper-venue">
+                Proceedings of the 43rd International Conference on Machine Learning (ICML), 2026 · Seoul
+              </p>
+
               <details class="paper-abstract">
                 <summary>Abstract</summary>
                 <p>
@@ -83,34 +195,54 @@
                   reasoning, and yield actionable insights.
                 </p>
               </details>
-              <p class="paper-keywords"><strong>Keywords:</strong> Explainability · Signomial · Classification · Equation Learning · Symbolic AI</p>
+
+              <p class="paper-keywords">
+                <strong>Keywords:</strong>
+                Explainability · Signomial · Classification · Equation Learning · Symbolic AI
+              </p>
+
               <div class="paper-links">
                 <a href="https://arxiv.org/abs/2601.21789" target="_blank">Paper</a>
                 <a href="https://github.com/AdiaLumadjeng/ecsel" target="_blank">Code</a>
                 <a href="#" onclick="toggleBib('bib-ecsel'); return false;">BIB</a>
               </div>
+
               <div class="bib-block" id="bib-ecsel"><span class="bib-key">@inproceedings{lumadjeng2026ecsel,</span>
-  <span class="bib-field">  title</span>     = <span class="bib-value">{ECSEL: Explainable Classification via Signomial Equation Learning}</span>,
-  <span class="bib-field">  author</span>    = <span class="bib-value">{Lumadjeng, Adia C. and Birbil, {\c{S}}. {\.I}lker and Acar, Erman}</span>,
-  <span class="bib-field">  booktitle</span> = <span class="bib-value">{Proceedings of the 43rd International Conference on Machine Learning}</span>,
-  <span class="bib-field">  series</span>    = <span class="bib-value">{Proceedings of Machine Learning Research}</span>,
-  <span class="bib-field">  year</span>      = <span class="bib-value">{2026}</span>,
-  <span class="bib-field">  url</span>       = <span class="bib-value">{https://arxiv.org/abs/2601.21789}</span>,
+<span class="bib-field">  title</span>     = <span class="bib-value">{ECSEL: Explainable Classification via Signomial Equation Learning}</span>,
+<span class="bib-field">  author</span>    = <span class="bib-value">{Lumadjeng, Adia C. and Birbil, {\c{S}}. {\.I}lker and Acar, Erman}</span>,
+<span class="bib-field">  booktitle</span> = <span class="bib-value">{Proceedings of the 43rd International Conference on Machine Learning}</span>,
+<span class="bib-field">  series</span>    = <span class="bib-value">{Proceedings of Machine Learning Research}</span>,
+<span class="bib-field">  year</span>      = <span class="bib-value">{2026}</span>,
+<span class="bib-field">  url</span>       = <span class="bib-value">{https://arxiv.org/abs/2601.21789}</span>,
 <span class="bib-key">}</span></div>
+
             </div>
           </div>
         </div>
 
+
         <!-- RUG -->
         <div class="paper">
           <div class="paper-inner">
-            <img src="thumbnail_RUG.jpg" alt="Rule generation paper thumbnail" class="paper-thumb">
+            <img
+              src="thumbnail_RUG.jpg"
+              alt="Rule generation paper thumbnail"
+              class="paper-thumb"
+            >
+
             <div class="paper-content">
               <p class="paper-title">
                 Rule Generation for Classification: Scalability, Interpretability, and Fairness
               </p>
-              <p class="paper-authors">Tabea E. Röber, Adia C. Lumadjeng, M. Hakan Akyüz, Ş. İlker Birbil</p>
-              <p class="paper-venue">Computers &amp; Operations Research, Volume 183, 2025, 107163</p>
+
+              <p class="paper-authors">
+                Tabea E. Röber, Adia C. Lumadjeng, M. Hakan Akyüz, Ş. İlker Birbil
+              </p>
+
+              <p class="paper-venue">
+                Computers &amp; Operations Research, Volume 183, 2025, 107163
+              </p>
+
               <details class="paper-abstract">
                 <summary>Abstract</summary>
                 <p>
@@ -129,26 +261,44 @@
                   on the one side, and accuracy on the other side.
                 </p>
               </details>
+
               <p class="paper-note">
-                This paper extends my MSc thesis in Econometrics. The methodology was developed as part of that thesis work.
-                The method has since been made into a Python package, <a href="https://github.com/sametcopur/ruleopt" target="_blank">ruleopt</a>, by S. Çopur.
+                This paper extends my MSc thesis in Econometrics. The methodology was developed as part
+                of that thesis work. The method has since been made into a Python package,
+                <a href="https://github.com/sametcopur/ruleopt" target="_blank">ruleopt</a>,
+                by S. Çopur.
               </p>
-              <p class="paper-keywords"><strong>Keywords:</strong> Machine Learning · Linear Programming · Rule Generation · Interpretability · Fairness</p>
+
+              <p class="paper-keywords">
+                <strong>Keywords:</strong>
+                Machine Learning · Linear Programming · Rule Generation · Interpretability · Fairness
+              </p>
+
               <div class="paper-links">
-                <a href="https://www.sciencedirect.com/science/article/pii/S0305054825001911" target="_blank">Paper</a>
-                <a href="https://github.com/sibirbil/RuleDiscovery" target="_blank">Code</a>
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S0305054825001911"
+                  target="_blank"
+                >Paper</a>
+
+                <a
+                  href="https://github.com/sibirbil/RuleDiscovery"
+                  target="_blank"
+                >Code</a>
+
                 <a href="#" onclick="toggleBib('bib-rug'); return false;">BIB</a>
               </div>
+
               <div class="bib-block" id="bib-rug"><span class="bib-key">@article{rober2025rule,</span>
-  <span class="bib-field">  title</span>   = <span class="bib-value">{Rule generation for classification: Scalability, interpretability, and fairness}</span>,
-  <span class="bib-field">  author</span>  = <span class="bib-value">{R{\"o}ber, Tabea E. and Lumadjeng, Adia C. and Aky{\"u}z, M. Hakan and Birbil, {\c{S}}. {\.I}lker}</span>,
-  <span class="bib-field">  journal</span> = <span class="bib-value">{Computers \&amp; Operations Research}</span>,
-  <span class="bib-field">  volume</span>  = <span class="bib-value">{183}</span>,
-  <span class="bib-field">  pages</span>   = <span class="bib-value">{107163}</span>,
-  <span class="bib-field">  year</span>    = <span class="bib-value">{2025}</span>,
-  <span class="bib-field">  doi</span>     = <span class="bib-value">{10.1016/j.cor.2025.107163}</span>,
-  <span class="bib-field">  issn</span>    = <span class="bib-value">{0305-0548}</span>,
+<span class="bib-field">  title</span>   = <span class="bib-value">{Rule generation for classification: Scalability, interpretability, and fairness}</span>,
+<span class="bib-field">  author</span>  = <span class="bib-value">{R{\"o}ber, Tabea E. and Lumadjeng, Adia C. and Aky{\"u}z, M. Hakan and Birbil, {\c{S}}. {\.I}lker}</span>,
+<span class="bib-field">  journal</span> = <span class="bib-value">{Computers \& Operations Research}</span>,
+<span class="bib-field">  volume</span>  = <span class="bib-value">{183}</span>,
+<span class="bib-field">  pages</span>   = <span class="bib-value">{107163}</span>,
+<span class="bib-field">  year</span>    = <span class="bib-value">{2025}</span>,
+<span class="bib-field">  doi</span>     = <span class="bib-value">{10.1016/j.cor.2025.107163}</span>,
+<span class="bib-field">  issn</span>    = <span class="bib-value">{0305-0548}</span>,
 <span class="bib-key">}</span></div>
+
             </div>
           </div>
         </div>
@@ -158,12 +308,14 @@
     </div>
   </main>
 
+
   <footer>
     <div class="container">
       <span>© Adia Lumadjeng</span>
       <span>University of Amsterdam</span>
     </div>
   </footer>
+
 
   <script>
     function toggleBib(id) {
